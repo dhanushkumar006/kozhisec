@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +50,7 @@ const Navbar = () => {
           <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">
             Case Studies
           </a>
+          <ThemeToggle />
           <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
             Client Portal
           </Button>
@@ -56,13 +58,16 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-gray-700"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center space-x-4">
+          <ThemeToggle />
+          <button
+            className="text-gray-700"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
