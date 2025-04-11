@@ -24,7 +24,9 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-sm py-3" : "bg-transparent py-5"
+        isScrolled 
+          ? "bg-white dark:bg-gray-900 shadow-sm dark:shadow-gray-800 py-3" 
+          : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -41,17 +43,17 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">
+          <a href="#services" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             Services
           </a>
-          <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">
+          <a href="#features" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             Solutions
           </a>
-          <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">
+          <a href="#testimonials" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             Case Studies
           </a>
           <ThemeToggle />
-          <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
+          <Button variant="ghost" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             Client Portal
           </Button>
           <Button>Get Protected</Button>
@@ -61,7 +63,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center space-x-4">
           <ThemeToggle />
           <button
-            className="text-gray-700"
+            className="text-gray-700 dark:text-gray-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -72,30 +74,30 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-white absolute top-full left-0 right-0 shadow-lg py-4 px-4">
+        <nav className="md:hidden bg-white dark:bg-gray-900 absolute top-full left-0 right-0 shadow-lg dark:shadow-gray-800 py-4 px-4">
           <div className="flex flex-col space-y-4">
             <a
               href="#services"
-              className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </a>
             <a
               href="#features"
-              className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Solutions
             </a>
             <a
               href="#testimonials"
-              className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Case Studies
             </a>
-            <Button variant="ghost" className="justify-start">
+            <Button variant="ghost" className="justify-start text-gray-700 dark:text-gray-200">
               Client Portal
             </Button>
             <Button>Get Protected</Button>
