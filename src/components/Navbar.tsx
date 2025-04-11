@@ -36,14 +36,14 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">
+            Services
+          </a>
           <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">
             Solutions
           </a>
           <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">
             Case Studies
-          </a>
-          <a href="#pricing" className="text-gray-700 hover:text-blue-600 transition-colors">
-            Services
           </a>
           <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
             Client Portal
@@ -66,6 +66,13 @@ const Navbar = () => {
         <nav className="md:hidden bg-white absolute top-full left-0 right-0 shadow-lg py-4 px-4">
           <div className="flex flex-col space-y-4">
             <a
+              href="#services"
+              className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Services
+            </a>
+            <a
               href="#features"
               className="text-gray-700 hover:text-blue-600 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
@@ -78,13 +85,6 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Case Studies
-            </a>
-            <a
-              href="#pricing"
-              className="text-gray-700 hover:text-blue-600 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
             </a>
             <Button variant="ghost" className="justify-start">
               Client Portal

@@ -7,12 +7,14 @@ import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import CoreServices from "@/components/CoreServices";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
+      <CoreServices />
       <Features />
       <Testimonials />
       <CallToAction />
