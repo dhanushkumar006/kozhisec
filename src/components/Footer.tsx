@@ -16,11 +16,11 @@ const Footer = () => {
           <div className="col-span-2">
             <a href="/" className="inline-block mb-4">
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                Spark
+                Kozhisec
               </span>
             </a>
             <p className="text-gray-600 mb-4 max-w-xs">
-              Empowering startups with the tools they need to succeed in today's competitive landscape.
+              Empowering organizations with advanced cybersecurity solutions to protect against evolving digital threats.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-gray-500">
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">© {currentYear} Spark. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© {currentYear} Kozhisec. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
               {footerLinks.legal.map((link, index) => (

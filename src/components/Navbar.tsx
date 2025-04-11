@@ -30,7 +30,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center">
           <Shield className="h-6 w-6 mr-2 text-blue-600" />
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            CyberShield
+            Kozhisec
           </span>
         </a>
 
