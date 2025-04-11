@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +28,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <Shield className="h-6 w-6 mr-2 text-blue-600" />
+          <img 
+            src="/lovable-uploads/800d76a0-1e63-4e96-bb1c-90874876a085.png" 
+            alt="Kozhisec Logo" 
+            className="h-8 w-auto mr-2"
+          />
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             Kozhisec
           </span>
