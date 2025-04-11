@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Shield } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,26 +28,27 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="/" className="flex items-center">
+          <Shield className="h-6 w-6 mr-2 text-blue-600" />
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Spark
+            CyberShield
           </span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">
-            Features
+            Solutions
           </a>
           <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">
-            Testimonials
+            Case Studies
           </a>
           <a href="#pricing" className="text-gray-700 hover:text-blue-600 transition-colors">
-            Pricing
+            Services
           </a>
           <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
-            Log in
+            Client Portal
           </Button>
-          <Button>Get Started</Button>
+          <Button>Get Protected</Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -69,26 +70,26 @@ const Navbar = () => {
               className="text-gray-700 hover:text-blue-600 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Features
+              Solutions
             </a>
             <a
               href="#testimonials"
               className="text-gray-700 hover:text-blue-600 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Testimonials
+              Case Studies
             </a>
             <a
               href="#pricing"
               className="text-gray-700 hover:text-blue-600 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Pricing
+              Services
             </a>
             <Button variant="ghost" className="justify-start">
-              Log in
+              Client Portal
             </Button>
-            <Button>Get Started</Button>
+            <Button>Get Protected</Button>
           </div>
         </nav>
       )}

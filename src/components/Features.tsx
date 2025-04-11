@@ -1,28 +1,28 @@
 
-import { Check } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: "📊",
-      title: "Real-time Analytics",
+      icon: "🔒",
+      title: "Advanced Encryption",
       description:
-        "Track your performance metrics in real-time and make data-driven decisions to optimize your growth.",
-      benefits: ["Live dashboard updates", "Custom reports", "Export capabilities"],
+        "Protect your sensitive data with military-grade encryption that ensures your information remains secure at all times.",
+      benefits: ["End-to-end encryption", "Zero-knowledge architecture", "Secure key management"],
     },
     {
-      icon: "🔄",
-      title: "Seamless Integration",
+      icon: "🛡️",
+      title: "Threat Detection",
       description:
-        "Connect with your favorite tools and services without friction. Our platform works where you work.",
-      benefits: ["100+ app integrations", "API access", "No-code connectors"],
+        "Our AI-powered system constantly monitors for suspicious activities and potential threats to your network.",
+      benefits: ["Real-time monitoring", "Anomaly detection", "Immediate alerts"],
     },
     {
-      icon: "🚀",
-      title: "Rapid Deployment",
+      icon: "🔍",
+      title: "Vulnerability Assessment",
       description:
-        "Launch new features and updates in minutes, not days. Accelerate your go-to-market strategy.",
-      benefits: ["One-click deployment", "Version control", "Rollback options"],
+        "Regular scans identify weaknesses in your infrastructure before they can be exploited by attackers.",
+      benefits: ["Automated scanning", "Detailed reports", "Remediation guidance"],
     },
   ];
 
@@ -31,13 +31,13 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Everything you need to{" "}
+            Enterprise-grade{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              scale fast
+              protection
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Our powerful features give you the edge you need in today's competitive market.
+            Our comprehensive security solutions help safeguard your organization from evolving cyber threats.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const Features = () => {
         
         <div className="mt-16 text-center">
           <a href="#" className="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center">
-            View all features
+            View all security solutions
             <ArrowRight size={16} className="ml-1" />
           </a>
         </div>
